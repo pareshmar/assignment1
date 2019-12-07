@@ -1,5 +1,7 @@
-# Assignment1
-This App is about The Weeknd. It has a tabbar that includes 3 different sections: Home that includes an 'about' for the Weeknd, Albums that list all his albums and an XO page that details who is signed to his label XO 
+# Assignment4
+ AwesomeRecipes Provide the opportunity​ ​for users to keep track of all their recipes! this app would allow users to save any of their favourite recipes to this app.  
+ This assignment incorporates firebase and a bottom tabbar navigator. 
+
 
 # Installing & Deployment
 to start in terminal change directory to the project folder and type 'npm install' & 'expo start'

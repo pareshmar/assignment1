@@ -1,27 +1,28 @@
 {
-  "name": "3-screens-finalv3",
+  "name": "4-final-assignment",
   "version": "0.0.0",
   "description": "No description",
-  "author": null,
+  "author": "Pareshma Rampersaud",
   "private": true,
   "main": "node_modules/expo/AppEntry.js",
   "dependencies": {
+    "braces": "^3.0.2",
     "expo": "^35.0.0",
+    "firebase": "^7.5.0",
+    "lottie-react-native": "2.6.1",
+    "micromatch": "^4.0.2",
     "react": "16.8.3",
     "react-native": "https://github.com/expo/react-native/archive/sdk-35.0.0.tar.gz",
-    "lottie-react-native": "2.6.1",
-    "react-native-maps": "0.25.0",
-    "react-native-screens": "1.0.0-alpha.23",
     "react-native-gesture-handler": "1.3.0",
+    "react-native-maps": "0.25.0",
     "react-native-reanimated": "1.2.0",
+    "react-native-screens": "1.0.0-alpha.23",
     "react-native-svg": "9.9.2",
-    "braces": "^3.0.2",
-    "micromatch": "^4.0.2",
+    "react-native-vector-icons": "6.6.0",
     "react-native-web": "^0.11.7",
     "react-navigation": "^4.0.10",
-    "react-navigation-tabs": "^2.5.5",
     "react-navigation-stack": "^1.9.3",
-    "react-navigation-transitions": "^1.0.12",
-    "react-native-vector-icons": "6.6.0"
+    "react-navigation-tabs": "^2.5.5",
+    "react-navigation-transitions": "^1.0.12"
   }
 }

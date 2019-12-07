@@ -1,4 +1,3 @@
-
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { createStackNavigator } from 'react-navigation-stack';
@@ -7,52 +6,46 @@ import React, { Component } from 'react';
 import { Image } from 'react-native';
 
 import HomeScreen from './screens/home';
-import XoScreen from './screens/xo';
-import AlbumsScreen from './screens/albums';
+import PostScreen from './screens/PostScreen';
+import RecipeScreen from './screens/recipes'
+ 
 
 
  
 
 // Tab Navigator
 const HomeNavigator = createBottomTabNavigator(
+ 
   {
     Home: { screen: HomeScreen, 
     navigationOptions: {
       tabBarLabel: '',
       tabBarIcon: () => (
             <Image
-              source={require('./assets/black.png')} style = {{height: 25, width : 25, alignItems: 'center'}                    } />
+              source={require('./images/home.png')} style = {{height: 25, width : 25, alignItems: 'center'}} />
              ) }},
 
-    Albums: { screen: AlbumsScreen, navigationOptions: {
+    Post : {screen: PostScreen, navigationOptions: {
+      
       tabBarLabel: '',
       tabBarIcon: () => (
             <Image
-              source={require('./assets/album.png')} style = {{height: 25, width : 25, alignItems: 'center'}                    } />
+              source={require('./images/add.png')} style = {{height: 25, width : 25, alignItems: 'center'}} />
              ) }},
 
-
-    Xo : {screen: XoScreen, navigationOptions: {
-      tabBarLabel: '',
-      tabBarIcon: () => (
-            <Image
-              source={require('./assets/xo.png')} style = {{height: 25, width : 25, alignItems: 'center'}                    } />
-             ) }}
-  },
+    Recipes : {screen: RecipeScreen, navigationOptions: {
+      
+              tabBarLabel: '',
+              tabBarIcon: () => (
+                    <Image
+                      source={require('./images/dish.png')} style = {{height: 25, width : 25, alignItems: 'center'}} />
+                     ) },
+                    },         
+      },
   {
     initialRouteName: 'Home'
   },
-  {
-    tabBarOptions: {
-       activeTintColor: '#fb9800',
-       inactiveTintColor: '#7e7b7b',
-       showLabel: true,
-       labelStyle: {
-        fontSize: 10,
-       }
-      }
-  }
- 
+  
 )
 
 // app entry point
